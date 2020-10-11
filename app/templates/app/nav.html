@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - Симулятор заводчика</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'app/content/bootstrap.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'app/content/main.css' %}" />
+    <script src="{% static 'app/scripts/modernizr-2.6.2.js' %}"></script>
+</head>
+<div id="container">
+    <div id="header">
+        <table width="900">
+            <tr>
+                <td><h1>Симулятор заводчика</h1></td>
+                <h2><td><img src="{% static 'app/img/test.png' %}" /></td></h2>
+            </tr>
+        </table>
+                
+    </div>
+    <div id="nav">
+        <ul>
+            <li><a href="#"><span>Dashboard</span></a></li>
+            <li><a href="#"><span>Posts</span></a></li>
+            <li class="dropdown">
+                <a href="#"><span>Users</span></a>
+                <ul>
+                    <li><a href="#"><span>Joshua Hibbert</span></a></li>
+                    <li><a href="#"><span>Kyle Bragger</span></a></li>
+                    <li><a href="#"><span>Jack Rugile</span></a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#"><span>Settings</span></a>
+                <ul>
+                    <li><a href="#"><span>General</span></a></li>
+                    <li><a href="#"><span>SEO</span></a></li>
+                    <li><a href="#"><span>Style</span></a></li>
+                    <li><a href="#"><span>Plugins</span></a></li>
+                    <li><a href="#"><span>Security</span></a></li>
+                </ul>
+            </li>
+            <li><a href="#"><span>View Site</span></a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
