@@ -47,8 +47,14 @@
     </div>
 </div>
     {# {% include 'app/left_sidebar.html' %} #}
-    <div class="content">  
+    <div class="content"> 
+    {% if user.is_authenticated %}  {# если пользователь авторизован, показываем контент#}
+     
         {% block content %}{% endblock %}{# тут вставляем текст из блока в about.html#}
+    
+    {% else %}
+        <a href="{% url 'login' %}">Для вывода данных авторизуйтесь</a>
+    {% endif %}
     </div>
 </body>
 </html>

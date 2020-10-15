@@ -53,6 +53,7 @@ def office(request):
         {
             'date':datetime.today().date,
             'text': iner()
+           
         }
     )
 def pr (a , b ):
