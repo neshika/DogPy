@@ -1,0 +1,13 @@
+﻿{% extends "app/nav.html" %}
+
+
+
+{% block content %}
+
+<p>Добро пожаловать, <strong>{{ user.username }}</strong> в офис!</p>
+<p>Сегодня: {{ date }} </p>
+<p>Свежие новости на сегодня: {{ text }}</p>
+
+
+
+{% endblock %}

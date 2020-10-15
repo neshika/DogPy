@@ -63,6 +63,7 @@
     <Content Include="app\templates\app\nav.html" />
     <Content Include="app\templates\app\index.html" />
     <Content Include="app\templates\app\left_sidebar.html" />
+    <Content Include="app\templates\app\office.html" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="app\static\app\content\bootstrap.css" />

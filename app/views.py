@@ -44,7 +44,17 @@ def about(request):
             'text': iner()
         }
     )
-
+def office(request):
+    """Renders the about page."""
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/office.html',
+        {
+            'date':datetime.today().date,
+            'text': iner()
+        }
+    )
 def pr (a , b ):
     return a*b
 
