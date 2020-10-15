@@ -1,10 +1,14 @@
-{% extends "app/nav.html" %}
+﻿{% extends "app/nav.html" %}
 
-{% block content %}
+    
+ 
+ {% block content %}
 
-<h2>{{ title }}.</h2>
-<h3>{{ message }}</h3>
+    <p>Добро пожаловать, <strong>{{ user.username }}</strong> в офис!</p>
+    <p>Сегодня: {{ date }} </p>
+    <p>Свежие новости на сегодня: {{ text }}</p>
+    
+    
 
-<p>Use this area to provide additional information.</p>
+    {% endblock %}
 
-{% endblock %}

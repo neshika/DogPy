@@ -39,7 +39,21 @@ def about(request):
         'app/about.html',
         {
             'title':'About',
-            'message':'Your application description page.',
-            'year':datetime.now().year,
+            'message':'Добро пожаловать в офис',
+            'date':datetime.today().date,
+            'text': iner()
         }
     )
+
+def pr (a , b ):
+    return a*b
+
+def iner():
+    a = 5
+    b = 6
+    return pr(a,b)
+
+
+
+
+
